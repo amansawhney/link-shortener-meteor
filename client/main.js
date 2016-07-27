@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/header'
 
 const App = () => {
-  return {
-    <h1>Link Shortener </h1>
-  }
-}
+  return (
+    < Header />
+  );
+};
 
-Meteor.stratup(() => {
+Meteor.startup(() => {
   ReactDOM.render(<App />, document.querySelector('.render-target'));
 });
