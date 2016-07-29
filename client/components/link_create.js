@@ -11,9 +11,8 @@ class LinkCreate extends Component {
     return (
       <div className = "col-md-6 well col-md-offset-3">
         <form onSubmit={this.handleSubmit.bind(this)}>
-            <div className="input-group">
+            <div className="row">
               <input ref='input' type="text" className="form-control" placeholder="Link To Shorten" aria-describedby="basic-addon2" />
-              <span className="input-group-addon" id="basic-addon2">.com</span>
             </div>
             <br />
             <button className = "btn btn-primary"> SHORTEN </button>
