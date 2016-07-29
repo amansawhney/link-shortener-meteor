@@ -17,10 +17,16 @@ class LinkCreate extends Component {
     event.preventDefault();
     console.log(this.refs.input.value);
     Meteor.call('links.insert', this.refs.input.value, (error) => {
-      msg.show("That is not a valid URL", {
-        time: 2000,
-        type: 'error',
-      });
+      if (error) {
+        this.setState({error: "Enter vaild URL dude"})
+        msg.show("That is not a valid URL", {
+          time: 2000,
+          type: 'error',
+        });
+      } else {
+        this.setState({error: ''})
+        this.refs.input.value = '';
+      }
     });
   }
 
