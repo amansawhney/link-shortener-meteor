@@ -5,8 +5,12 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "install": "^0.8.1",
     "meteor-node-stubs": "~0.2.0",
+    "npm": "^3.10.5",
     "react": "^15.2.1",
+    "react-addons-css-transition-group": "^15.2.1",
+    "react-alert": "^1.0.14",
     "react-dom": "^15.2.1",
     "valid-url": "^1.0.9"
   }
